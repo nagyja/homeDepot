@@ -157,7 +157,7 @@ navbar.links = [
     {linkTo: "#", text: "Dropdown Link 1"},
     {linkTo: "#", text: "Dropdown Link 2", active: true}
   ]},
-  {linkTo: "https://www.homedepot.com/c/Savings_Center", text: "Special Offers"},
+  {linkTo: "#", text: "Special Offers"},
   {linkTo: "http://localad.homedepot.com/HomeDepotSD2/LocalAd?storeid=2398986#!/store/2398986/dynamicpages/1433?currentpagenumber=1", text: "Local Ad"},
 ];
 
@@ -241,24 +241,6 @@ navbar.links = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <nav className="navbar navbar-inverse">
         <div className="container-fluid">
           <div className="navbar-header">
@@ -282,16 +264,6 @@ navbar.links = [
 
 
 //create constituant classes
-
-
-
-
-
-
-
-
-
-
 
 
 
