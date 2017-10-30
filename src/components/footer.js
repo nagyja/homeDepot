@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
 
-class Footer extends Component { //extends react based component, requiring {Component} as part of the React import.
-constructor (props){
-    super(props);
-    this.state = { term: 'initial value'};
-  }
-
+const Footer = React.createClass({
   render() {
     return (
     	<Row>
-    		<div className="col-lg-12" style="background-color:#eee;">
-          		<p style="text-align:left;"><strong>More saving. More doing.<span>®</span></strong>			
+    		<div className="col-lg-12" style=padding:10px;padding-right:200px;padding-left:200px;background-color:#eee;>
+         		<p style="text-align:left;"><strong>More saving. More doing.<span>®</span></strong>			
           			<span style="float:right;">Need Help? Please call us at:
     					<a href="tel:+1-800-466-3337" title="Call The Home Depot" style="text-decoration: none;">
-    						<strong>1-800-HOME-DEPOT</strong> (1-800-466-3337)
+            				<strong>1-800-HOME-DEPOT</strong> (1-800-466-3337)</p>
     					</a>
     				</span>
-    			</p>
+    			</p>	
     		</div>  		
     	</Row>
     	<Row>
@@ -41,7 +36,7 @@ constructor (props){
 }
 
 
-let ServiceFooter = React.createClass({
+const ServiceFooter = React.createClass({
 	render(){
 		return(
 			<CustomerServ/>
@@ -51,7 +46,7 @@ let ServiceFooter = React.createClass({
 		)
 	}
 })
-let CustomerServ = React.createClass({
+const CustomerServ = React.createClass({
 	render(){
 		return(
 			<div>
@@ -74,14 +69,14 @@ const serves = [
 	{serveLinks:"www.homedepot.com/c/Product_Recalls", text:"Product Recalls"},
 	{serveLinks:"www.homedepot.com/c/customer_service", text:"Help &amp; FAQs"}
 ];
-let Resource = React.createClass({
+const Resource = React.createClass({
 	render(){
 		return(
 			<div>
 				<h3>Resources</h3>
 				<ul>
-      				{props.resources.map((serve)=>
-      				<ul href={resource.resourceLinks} title={resource.text}>{resource.text}</ul>
+      				{props.resources.map((resource)=>
+      				<li href={resource.resourceLinks} title={resource.text}>{resource.text}</li>
       				)}
        			</ul>
 			</div>
@@ -99,13 +94,13 @@ const resources=[
 	{resourceLinks:"http://www6.homedepot.com/rebatefinder/index.html", text:"Rebate Center"},
 	{resourceLinks:"www.homedepot.com/c/Gift_Cards", text:"Gift Cards"}
 ];
-let About = React.createClass({
+const About = React.createClass({
 	render(){
 		return(
 			<div>
 				<h3>About Us</h3>
 				<ul>
-      				{props.abouts.map((serve)=>
+      				{props.abouts.map((about)=>
       				<ul href={about.aboutLinks} title={about.text}>{about.text}</ul>
       				)}
        			</ul>
@@ -113,7 +108,7 @@ let About = React.createClass({
 		)
 	}
 })
-const abouts=[
+const abouts =[
 	{aboutLinks:"http://careers.homedepot.com", text:"Careers"},
 	{aboutLinks:"https://corporate.homedepot.com", text:"Corporate Information"},
 	{aboutLinks:"http://builtfromscratch.homedepot.com", text:"Digital Newsroom"},
@@ -124,7 +119,7 @@ const abouts=[
 	{aboutLinks:"www.homedepot.com/c/SF_MS_The_Home_Depot_Affiliate_Program", text:"Affiliate Program"},
 	{aboutLinks:"http://ecooptions.homedepot.com", text:"Eco Options"}
 ];
-let Other = React.createClass({
+const Other = React.createClass({
 	render(){
 		return(
 			<div>
@@ -135,7 +130,7 @@ let Other = React.createClass({
 		)
 	}
 })
-let Financing = React.createClass({
+const Financing = React.createClass({
 	render(){
 		return(
 			<div style="background-color:#eee;">
@@ -149,7 +144,7 @@ let Financing = React.createClass({
 		)
 	}
 })
-let Signup = React.createClass({
+const Signup = React.createClass({
 	render(){
 		return(
 			<div>
@@ -163,7 +158,7 @@ let Signup = React.createClass({
 		)
 	}
 })
-let Social = React.createClass({
+const Social = React.createClass({
 	render(){
 		return(
 			{props.socials.map((social)=>
@@ -182,8 +177,7 @@ const socials = [
 	{source:"/public/assets/socIconYT", socialLinks: "http://www.youtube.com/user/homedepot", title:"Home Depot on Youtube"},
 	{source:"/public/assets/socIconAP", socialLinks: "www.homedepot.com/c/SF_Mobile_Shopping", title:"Home Depot Mobile Apps"}
 ];
-
-let Legal = React.createClass({
+const Legal = React.createClass({
 	render(){
     	return (
     		<p>© 2000-2017 Home Depot Product Authority, LLC. All Rights Reserved. Use of this site is subject to certain 
@@ -211,6 +205,5 @@ const legals = [
 	{legalLinks:"www.homedepot.com/l/storeDirectory", text:"Store Directory"},
 	{legalLinks:"www.homedepot.com", text:"Mobile Site"}
 ];
-
 
 export default Footer;
