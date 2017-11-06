@@ -9,14 +9,19 @@ module.exports = {
     loaders: [
       {
         exclude: /node_modules/,
-        loader: "babel"
+        loader: "babel-loader",
+        query:
+          {
+            presets:["react"]
+          }
       }
     ]
   },
   resolve: {
-    extensions: ["", ".js", ".jsx"]
+    extensions: [".js", ".jsx", " "]
   },
   devServer: {
+    inline: false,
     contentBase: "./"
   }
 };
