@@ -1,0 +1,105 @@
+#logo {
+	position: absolute;
+	left: 24.5rem;
+	top:1.7rem;
+	-webkit-perspective: 750;
+}
+
+
+a img {
+	position:relative
+
+	opacity: 0.8;
+
+	-webkit-transition: opacity 1s;
+}
+
+a:hover img {
+	opacity: 1;
+}
+
+.logo_textbox {
+	margin-top: 4px !important;
+	position: absolute;
+	color: white;
+	font-family: 'Stardos Stencil', cursive;
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #ffffff;
+}
+
+
+.five.logo_textbox{
+	margin-left: 2px;
+	font-size: 14px !important;
+}
+.two .logo_textbox{
+	margin-left:4px !important; 
+}
+.three .logo_textbox{
+	margin-left:8px !important; 
+}	
+.four .logo_textbox{
+	margin-left:2px !important; 
+}
+div.one, div.two, div.three, div.four, div.five, div.six{
+	background: #f96302;
+}
+
+#shape > div {
+	border: 1px solid #f96302;
+	position: absolute;
+	width: 76px; height: 76px;
+
+	-webkit-transition: -webkit-transform 1s;
+}
+
+#shape > div img {
+	margin-left: 1px;
+	width: 95%; height: 95%;
+	
+}
+
+
+#shape {
+	position: relative;
+	top: 0;
+	margin: 0 auto;
+	width: 75px; height: 75px;
+
+	-webkit-animation: spin 60s infinite linear;
+	-webkit-transform-style: preserve-3d;
+}
+
+/* This is where the 3D magic happens */
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotateY(0) rotateX(-90deg); }
+	2.5% { -webkit-transform: rotateY(0) rotateX(-90deg); }
+	3% { -webkit-transform: rotateY(0) rotateX(0);}
+	4.5% { -webkit-transform: rotateY(0) rotateX(0);}
+	6% { -webkit-transform: rotateY(-90deg) rotateX(0);}
+	7.5% { -webkit-transform: rotateY(-90deg) rotateX(0);}
+	9% {-webkit-transform: rotateY(-180deg) rotateX(0);}
+	10.5% {-webkit-transform: rotateY(-180deg) rotateX(0);}
+	12% {-webkit-transform: rotateY(-270deg) rotateX(0);}
+	13.5% {-webkit-transform: rotateY(-270deg) rotateX(0);}
+	15% { -webkit-transform: rotateY(-90deg) rotateX(-45deg); }
+	15.5% { -webkit-transform: rotateY(0) rotateX(-90deg); }
+	16% {-webkit-transform: rotateY(-35deg) rotateX(-135deg);}
+	16.1% {-webkit-transform: rotateY(-35deg) rotateX(-135deg);}
+	16.3% { -webkit-transform: rotateY(0) rotateX(-90deg); }
+	16.6% { -webkit-transform: rotateY(-10deg) rotateX(-93deg); }
+	17% { -webkit-transform: rotateY(5deg) rotateX(-87deg); }
+	17.3% { -webkit-transform: rotateY(0) rotateX(-90deg); }
+	100% { -webkit-transform: rotateY(0) rotateX(-90deg); }
+}
+
+/* 3D positioning for each of the images/links */
+.one { -webkit-transform: rotateX(90deg) translateZ(38px); }
+.two { -webkit-transform: translateZ(38px); }
+.three { -webkit-transform: rotateY(90deg) translateZ(38px); }
+.four { -webkit-transform: rotateY(180deg) translateZ(38px); }
+.five { -webkit-transform: rotateY(-90deg) translateZ(38px); }
+.six { -webkit-transform: rotateX(-90deg) translateZ(38px); }

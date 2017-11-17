@@ -1,0 +1,139 @@
+.search-bar{
+  margin: 20px;
+  text-align: center;
+}
+.search-bar input {
+  width: 75%;
+}
+.video-item img {
+  max-width: 64px;
+}
+.video-detail{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  max-height: 295px;
+}
+.details {
+height: 295px;
+ margin-top: 10px;
+  padding: 10px; 
+  border-radius: 4px;
+  max-height: 295px;
+}
+.list-group{
+  margin-top: 20px;
+}
+.list-group-item {
+  border-style: none !important;
+  cursor: pointer;
+}
+.list-group-item:hover {
+  background-color: #eee;
+}
+.cat-vid:{
+  margin-top: 30px;
+  color: #eeeeee;
+}
+header{
+  text-align: center;
+  align-self: center;
+}
+.container {
+  margin-top: 2%;
+  width: 90%;
+}
+#VideoCategories{
+  background: #eeeeee;
+  max-height: 730px;
+}
+#catHeader{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+}
+#VideoCategories ul{
+  text-transform: uppercase;
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #999999;
+}
+#VideoCategories:hover{
+  padding-bottom: -1px;
+}
+#vidList{
+  overflow: scroll;
+  max-height: 725px;
+}
+.vidIt ul{
+  padding-left: none !important;
+}
+img.previewPic {
+  min-width: 200px !important;
+}
+.media-heading {
+  font-size: 12px !important;
+}
+.fauxHeader{
+  text-align: center;
+  min-width: 1460px;
+  max-width: 100%;
+  min-height: 130px;
+  max-height: 200px; 
+}
+.active{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #666666;
+  padding-bottom: 10px;
+  margin-bottom: .1rem;
+  border-left: solid 3px #999999;
+  border-bottom: solid 3px #999999;
+}
+ul.vidCategory:hover{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #666666;
+  padding-bottom: 10px;
+  margin-bottom: .1rem;
+  border-left: solid 3px #999999;
+  border-bottom: solid 3px #999999;
+}
+.socialIcon{
+  margin-right: 10px;
+}
+#goToStore, #vidCat {
+text-transform: uppercase;
+}
+#goToStore{
+padding-top: 1rem;
+color: #666666;
+padding-bottom: 1rem;
+}
+#detailCategory{
+color: #999999;
+font-family: "Noto Sans", Helvetica, Arial, sans-serif
+font-size: 14px;
+font-weight: 400;
+line-height: 1;
+}
+.details{
+  font-size: 13px;
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+  background: #e3e3e3;
+  position: relative;
+  min-height: 370px;
+}
+#videoTitle{
+  color: #666666;
+}
+#vidSocial{
+  position: absolute;
+  bottom: 10px;
+}
+#vidList{
+  max-height: 700px;
+}

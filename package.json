@@ -1,12 +1,12 @@
 {
   "name": "homedespot",
   "version": "1.0.0",
-  "description": "A study build of homedepot.com rebuilt in react",
+  "description": "A build of homedepot.com rebuilt in react",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
- "devDependencies": {
+  "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
@@ -17,15 +17,15 @@
     "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
-    "node": "^8.0.0",
     "babel-preset-stage-1": "^6.24.1",
     "lodash": "^4.17.4",
+    "node": "^8.0.0",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
-    "redux": "^3.7.2",
     "react-router": "^4.2.0",
+    "redux": "^3.7.2",
     "youtube-api-search": "0.0.5"
   },
   "scripts": {
@@ -34,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nagyja/homeDespot.git"
+    "url": "git+https://github.com/nagyja/homeDepot.git"
   },
   "author": "Jeffrey Nagy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nagyja/homeDespot/issues"
+    "url": "https://github.com/nagyja/homeDepot/issues"
   },
-  "homepage": "https://github.com/nagyja/homeDespot#readme"
+  "homepage": "https://github.com/nagyja/homeDepot#readme"
 }

@@ -1,0 +1,367 @@
+Documentation
+
+initial => app 
+	   <==> header 
+	   <=1> landing
+	   <=2> howto
+	   <=3> search results
+	   <=4> iframe links
+	   <==> footer
+
+howto <=> video categories
+	  <=> video details
+	  <=> video list <=> video list item
+
+header:
+	x) Task Links (simple mapped list of objects)
+	2) Logo (simple CSS animated cube)
+	3) Store (pop up alert to enter zip code of store)
+	4) SearchBar (input for search)
+	5) Account (drop down)
+		a) Sign In (pop up)
+		b) Register (pop up)
+		c) Order& Purchases (LINK)
+			C1) track your orders (text)
+			C2) Look Up By Signing in
+			C3) Look Up By Order Number
+			C4) Account terms / Privacy statement
+		d) Account Profile (Sign In pop up)
+		e) My List (Sign In pop up)
+		f) Find a List (link)
+			F1) sign in / register
+			F2) Search by first and last name
+			F3) Search by email
+	6) Cart
+		a) link
+		b) cart prop
+	7) DropDowns
+		a) All Departments (drop down)
+			A1)	 {Seasonal}
+			A2)	 Appliances (l.o.l.s, slide out panel)
+				 I)		Appliance Special Buys		
+				 II)	Refrigerators
+				 III)	Washers & Dryers
+				 IV)	Dishwashers
+				 V)		Ranges
+				 VI)	Microwaves
+				 VII)	Range Hoods
+				 VIII)	Wall Ovens
+				 IX)	Cooktops
+				 X)		Kitchen Packages
+				 XI)	Vacuum Cleaners & Floor Care
+				 XII)	Small Appliances
+				 XIII)	Heating, Cooling & Air Quality
+				 XIV)	Water Heaters
+				 XV)	Garbage Disposals
+				 XVI)	View All Appliances
+			A3)	 Bath & Faucets (l.o.l.s, slide out panel)
+				 I)		Bath Faucet & Hardware Collections		
+				 II)	Bathroom Faucets
+				 III)	Batroom Vanities
+				 IV)	Bathtubs
+				 V)		Shower & Shower Doors
+				 VI)	Medicine Cabinets
+				 VII)	Toilets
+				 VIII)	Bathroom Cabinets & Storage
+				 IX)	Bathroom Sinks
+				 X)		Bathroom Hardware
+				 XI)	Bathroom Mirrors
+				 XII)	Exhaust Fans
+				 XIII)	Bathroom Cleaners
+				 XIV)	Bath Towels & Decor
+				 XV)	View All Bath & Faucets
+			A4)	 Blinds & Windows Treatments (l.o.l.s, slide out panel)
+				 I)		Blinds		
+				 II)	Shades
+				 III)	Plantation Shutters
+				 IV)	Curtains & Drapery
+				 V)		Curtain Rods & Hardware
+				 VI)	Window Scarves & Valances
+				 VII)	Window Film
+				 VIII)	View All Blinds & Window Treatments	
+			A5)	 Building Materials (l.o.l.s, slide out panel)
+				 I)		Lumber & Composites		
+				 II)	Fencing
+				 III)	Decking
+				 IV)	Drywall
+				 V)		Doors & Windows
+				 VI)	Roofing & Gutters
+				 VII)	Siding
+				 VIII)	Insulation
+				 IX)	Concrete, Cement & Masonry
+				 X)		Ceilings
+				 XI)	Builders Hardware
+				 XII)	Fasteners
+				 XIII)	Moulding & Millwork
+				 XIV)	Ladders
+				 XV)	View All Building Materials	
+			A6)	 Decor & Furniture (l.o.l.s, slide out panel)
+				 I)		Rooms We Love		
+				 II)	Furniture
+				 III)	Matresses
+				 IV)	Wall Decor & Mirrors
+				 V)		Wallpaper & Borders
+				 VI)	Home Accents
+				 VII)	Bedding & Bath
+				 VIII)	Lugage & Travel Accessories
+				 IX)	Rugs
+				 X)		Lighting & Ceiling Fans
+				 XI)	Holiday Decorations
+				 XII)	View All Decor & Furniture	
+			A7)  Doors & Windows (l.o.l.s, slide out panel)
+				 I)		Exterior Doors		
+				 II)	Front Doors
+				 III)	Interior & Closet Doors
+				 IV)	Windows
+				 V)		Blinds & Window Treatments
+				 VI)	Exterior Shutters
+				 VII)	Awnings
+				 VIII)	Skylights
+				 IX)	Garage Goors & Accessories
+				 X)		Related Categories
+				 XI)	View All Doors & Windows
+			A8)	 Electrical (l.o.l.s, slide out panel)
+				 I)		Wire		
+				 II)	Light Bulbs
+				 III)	Home Security & Surveillance
+				 IV)	Boxes, Conduit & Fittings
+				 V)		Smart Home
+				 VI)	Circuit Breaker & Panels
+				 VII)	Extension Cords & Surge Protectors
+				 VIII)	Home Electronics
+				 IX)	Wall Plate & Jacks
+				 X)		Electrical Tools & Accessories
+				 XI)	Generators
+				 XII)	Dimmers, Switches & Outlets
+				 XIII)	Fire Safety
+				 XIV)	Household Batteries
+				 XV)	Related Categories
+				 XVI)	View All Electrical
+			A9)	 Flooring & Area Rugs (l.o.l.s, slide out panel)
+				 I)		Area Rugs & Mats
+				 II)	Carpet & Carpet Tile
+				 III)	Tile
+				 IV)	Vinyl Flooring
+				 V)		Laminate Flooring
+				 VI)	Hardwood Flooring
+				 VII)	Flooring Tools & Materials
+				 VIII)	Floor Cleaning Products 
+				 IX)	Related Categories
+				 X)		View All Flooring & Area Rugs
+			A10) Hardware (l.o.l.s, slide out panel)
+				 I)		Cabinet & Furniture Hardware		
+				 II)	Chain & Rope
+				 III)	Door Knobs & Hardware
+				 IV)	Garage Door Hardware
+				 V)		Gate Hardware
+				 VI)	Keys & Accessories
+				 VII)	Mailboxes, Posts & Addresses
+				 VIII)	Metal Sheerts & Rods
+				 IX)	Safety & Secutrity
+				 X)		Screws, Nails & Anchors
+				 XI)	Sign, Letter & Numbers
+				 XII)	Specialty Hardware
+				 XIII)	Tie-Down Straps & Bungees
+				 XIV)	Weather Stripping
+				 XV)	Window Hardware
+				 XVI)	View All Hardware
+			A11) Heating & Cooling (l.o.l.s, slide out panel)
+				 I)		Heaters		
+				 II)	Thermostats
+				 III)	Air Quality
+				 IV)	Water Heaters
+				 V)		Air Filters
+				 VI)	HVAC Parts & Supplies
+				 VII)	Air Conditioners & Coolers
+				 VIII)	Fireplaces
+				 IX)	Ventilation
+				 X)		Outdoor Heating
+				 XI)	Ceiling Fans
+				 XII)	Portable Fans
+				 XIII)	View All Heating & Cooling
+			A12) Kitchen & Kitchenware (l.o.l.s, slide out panel)
+				 I)		Kitchen Cabinets		
+				 II)	Kitchen Sinks
+				 III)	Kitchen Faucets
+				 IV)	Kitchen Counterops
+				 V)		Garbade Disposals
+				 VI)	Small Appliances
+				 VII)	Cooking & Food Preparation
+				 VIII)	Kitchen Storage & Organization
+				 IX)	Carts, Islands & Utility Tables
+				 X)		Tabletop & Bar
+				 XI)	Cleaning Supplies
+				 XII)	Kitchenwar Shop
+				 XIII)	Related Categories
+				 XIV)	View All Kitchen & Kitchenware
+			A13) Lawn & Garden (l.o.l.s, slide out panel)
+				 I)		Garden Plants & Flowers		
+				 II)	Trees & Bushes
+				 III)	Lawn Care
+				 IV)	Lawn Mowers
+				 V)		Garden Club
+				 VI)	Landscaping
+				 VII)	Outdoor Power Equipment
+				 VIII)	Garden Tools
+				 IX)	Pots & Planters
+				 X)		Watering & Irrigation
+				 XI)	Insects & Pest Control
+				 XII)	Fencing
+				 XIII)	Greenhouses
+				 XIV)	Sheds, Garages & Outdoor Storage
+				 XV)	View All Lawn & Garden
+			A14) Lighting & Ceiling Fans (l.o.l.s, slide out panel)
+				 I)		Ceiling Fans & Accessories		
+				 II)	Outdoor Lighting
+				 III)	Ceiling Lights
+				 IV)	Hanging Lights
+				 V)		Bathroom Lighting
+				 VI)	LED Light Fixtures
+				 VII)	Commercial Lighting
+				 VIII)	Under Cabinet Lighting
+				 IX)	Light Bulbs
+				 X)		Indoor Lighting Accessories 
+				 XI)	Lamps & Shades
+				 XII)	View All Lighting & Ceiling Fans
+			A15) Outdoor Living (l.o.l.s, slide out panel)
+				 I)		Patio Furniture	
+				 II)	Grills & Grill Accessories
+				 III)	Outdoo Power Equipment
+				 IV)	Fencing
+				 V)		Playsets & Recreation
+				 VI)	Decking
+				 VII)	Sheds & Outdoor Storage
+				 VIII)	Gazebos
+				 IX)	Pergolas
+				 X)		Outdoor Heating
+				 XI)	Pools & Pool Supplies
+				 XII)	Hot Tubs & Saunas
+				 XIII)	View All Outdoor Living
+			A16) Paint (l.o.l.s, slide out panel)
+				 I)		Interior Paint		
+				 II)	Exterior Paint
+				 III)	Primers
+				 IV)	Paint Sprayers
+				 V)		Paint Tools & Supplies
+				 VI)	Spray Paint
+				 VII)	Craft & Art Supplies
+				 VIII)	Exterior Stains
+				 IX)	Interior Stains
+				 X)		Concrete & Garage Floor Paint
+				 XI)	Waterproofing & Sealers
+				 XII)	Caulk & Sealants
+				 XIII)	Tape, Glue & Epoxy
+				 XIV)	Shop Top Brands
+				 XV)	Related Categories
+				 XVI)	View All Paint
+			A17) Plumbing (l.o.l.s, slide out panel)
+				 I)		Water Heaters		
+				 II)	Parts & Repair
+				 III)	Pipes & Fittings
+				 IV)	Valves
+				 V)		Plubming Tools
+				 VI)	Pumps
+				 VII)	Drain Openers
+				 VIII)	Kitchen Faucets
+				 IX)	Bath Faucets & Showerheads
+				 X)		Related Categories
+				 XI)	View All Plubming
+			A18) Storage & Organization (l.o.l.s, slide out panel)
+				 I)		Closet Storage	
+				 II)	Garage Storage
+				 III)	Shed, Garage & Outdoor Storage
+				 IV)	Kitchen Storage
+				 V)		Laundry Room Storage
+				 VI)	Moving Supplies
+				 VII)	Cleaning
+				 VIII)	Shelves & Shelf Brackets
+				 IX)	Cube Storage & Accessories
+				 X)		Storage Bins & Totes
+				 XI)	Home Storage Hooks
+				 XII)	Office Storage & Organization
+				 XIII)	Lockers
+				 XIV)	Safes
+				 XV)	Craft Storage
+				 XVI)	View All Storage & Organization
+			A19) Tools (l.o.l.s, slide out panel)
+				 I)		Power Tools
+				 II)	Hand Tools
+				 III)	Air Compressor & Air Tools
+				 IV)	Outdoor Power Tools
+				 V)		Tool Storage
+				 VI)	Power Tool Accessories
+				 VII)	Automotive
+				 VIII)	Apparel, Workwear & Safety gear
+				 IX)	Welding & Soldering
+				 		=>
+				 		=>
+				 		=>
+				 		=>
+				 		=>
+				 X)		Wet/Dry Vacuums
+				 XI)	View All Tools
+
+		b) Shop by Room (list of linked images)
+			B1)	Bathrooms
+			B2) Bedroom
+			B3)	Living Room
+			B4)	Kitchen
+			B5)	Dining
+			B6)	Patio
+			B7)	"Latest Looks"
+		c) DIY Projects & Ideas
+			C1)	Paint Ideas (list of links)
+				I) 	 How to Paint Interior Walls 	 
+				II)	 How to Caulk
+				III) Exterior Paint Updates				
+			C2) Appliance Upgrades (list of links)
+				I) 	 Refrigerators 101
+				II)	 Choose a Dishwasher
+				III) Appliance Q&A
+				IV)  DIY Appliance Repair
+			C3) Outdoor Ideas (list of links)
+				I) 	 Choosing the Right Fertilizer
+				II)	 All About Pavers
+				III) Organic Gardening 101
+				IV)  Join the Garden Club
+			C4) ALL DIY Projects (list of links)
+				I) 	 Bath Ideas
+				II)	 Flooring Upgrades
+				III) DIY Q&A
+				IV)  FREE DIY Workshops
+				V)	 Digital Workshops
+				VI)	 View All DIY Projects & Ideas
+			C5-NEW) Direct to "howto" video
+		d) Home Services
+			D1) Exterior Home Installation (list of links)
+				I) 	 Sheds
+				II)	 Fencing
+				III) Roofing
+				IV)  Gutters
+				V)	 Siding 
+			D2) Flooring Installations (list of links)
+				I)	 Carpet
+				II)	 Tile
+				III) Hardwood
+				IV)	 Express Flooring
+				V)	 N Hance Floor & Cabinet Refinishing
+			D3) Doors & Windows (list of links)
+				I)	 Garage Doors & Openers
+				II)  Doors
+				III) Windows
+			D4) All Services (list of links)
+				I) 	 Water Heater Installations
+				II)  HVAC Installation
+				III) Kitchen Upgrades & Remodeling
+				IV)	 Bath Installation
+		e) Specials & Offers (link)
+		f) Local Ad (link)
+	8) Message Band
+
+
+
+
+landing:
+
+
+footer

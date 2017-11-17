@@ -1,169 +1,320 @@
-.search-bar{
-  margin: 20px;
-  text-align: center;
+#TaskLinkRow{
+	font-family: "opensans-regular","Helvetica Neue",Helvetica-,Arial,sans-serif;
+	overflow:auto;
+	list-style-type:none;
+	margin-right:5px;
+	padding:0;
+	font-size: 1.1rem;
+	position: absolute;
+	right:21em;
+	top:1.1rem;
+}
+
+#TaskLinkRow a{
+	color:#000;
+	font-family: "opensans-regular","Helvetica Neue",Helvetica-,Arial,sans-serif;
+	margin-right: 2.5rem;
+}
+
+#free2day {
+	text-align: center;
+	padding-top: 3px;
+	position: absolute; 
+	bottom: 0;
+	min-width:100%;
+	color: #fff;
+	background-color: #f96302; 
+	font-size: 1.8rem;
+	height: 34px;
+}
+#StoreLocation{
+	font-family: "opensans-regular","Helvetica Neue",Helvetica-,Arial,sans-serif;
+	letter-spacing:.2px;
+	position:absolute;
+	width: 200px;
+	top: 4.5rem;
+	left: 35.5rem;
+}
+#StoreLocation img{
+	float:left;
+}
+#StoreLocation p{
+	padding-right: 0px
+	width: 160px;
+}
+
+#Heading{
+	position:absolute;
+	left:0;
+	top: 0;
+	min-width:100%;
+	min-height: 18rem;
+}
+
+.search-bar {
+	max-width: 75rem;
+	position: relative;
+	top: 4.7rem;
+	left: 57rem;
+  	margin:0;
+  	text-align: center;
 }
 
 .search-bar input {
-  width: 75%;
+	height:36px;
+  	width: 75rem;
 }
 
 .video-item img {
   max-width: 64px;
 }
 
-.video-detail{
+.video-detail .details {
   margin-top: 10px;
   padding: 10px;
+  border: 1px solid #ddd;
   border-radius: 4px;
-  max-height: 295px;
-}
-
-
-.details {
-height: 295px;
- margin-top: 10px;
-  padding: 10px; 
-  border-radius: 4px;
-  max-height: 295px;
-}
-
-.list-group{
-  margin-top: 20px;
 }
 
 .list-group-item {
-  border-style: none !important;
   cursor: pointer;
-
 }
 
 .list-group-item:hover {
   background-color: #eee;
 }
 
-.cat-vid:{
-  margin-top: 30px;
-  color: #eeeeee;
+#cartVertLine {
+	font-size: 16px;
+	font-weight: bold;
+}
+#cart{
+
 }
 
-header{
-  text-align: center;
-  align-self: center;
+#Directory{
+	max-width: 190rem;
+	position: absolute;
+	z-index:10;
+	top: 10rem;
+	left: 24rem;
+  	margin:5px;
+  	text-align: center;
+  	font-size: 1.4rem;
+  	padding-right: 10px
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin-right:20px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    min-width: 240px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    font-weight: bold;
+    border-bottom: 4px solid #f96302;
 }
 
-.container {
-  margin-top: 2%;
-  width: 90%;
+a #Offers{
+color: inherit;
+text-decoration: none;
 }
 
-#VideoCategories{
-  background: #eeeeee;
-  max-height: 730px;
+#Offers:hover, #Local:hover{
+	color: black;
+	text-decoration: none;
+	cursor:pointer;
+	font-weight: bold;
+    border-bottom: 1px solid #f96302;
+
+}
+#account {
+	position: absolute;
+	top:5rem;
+	right: 45rem;
 }
 
-#catHeader{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 40px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+#cart{
+	position: absolute;
+	top: 5rem;
+	right: 30rem;
+}
+#Departments{
+
+}
+#Departments a{
+	padding: 5px 0 5px 20px !important;
+	text-align: left;
+	margin:0!important;
+	font-family: opensans-regular,Helvetica Neue,Helvetica-,Arial,sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
 }
 
-#VideoCategories ul{
-  text-transform: uppercase;
-  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  color: #999999;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+#footing{
+	min-width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 1rem;
+}
+#tagline {
+	display: inline-block;
+	width: 100%;
+	padding-top: 1rem;
+	top: 0;
+	color:black;
+	background-color: #eeeeee; 
+	font-size: 1.8rem;
+	max-height: 10rem;
+}
+#tagMotto{
+	position: absolute;
+	left:24rem;
+	padding-left: 1rem;
+	text-align: left;
+	max-width: 100%;
+	padding-right: 0;
 }
 
-#VideoCategories:hover{
-  padding-bottom: -1px;
+#tagHelp{
+	right:24rem;
+	position: relative;
+	text-align: right;
+	padding-right: 1rem;
+	width: 100%;
 }
 
-#vidList{
-  overflow: scroll;
-  max-height: 725px;
+#ServiceFooter{
+	position: relative;
+	
+	display:inline-block;
+	max-width: 100%;
+	margin-bottom: 1rem;
+}
+#CustomerService{
+	
+}
+#Resources, #About, #misc{
+	
+}
+#misc ul{
+	font-size: 1.4rem;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+#CustomerService ul{
+	font-size: 1.4rem;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+#Resources ul{
+	font-size: 1.4rem;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+#About ul{
+	font-size: 1.4rem;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+#CustomerService h3{
+	font-size: 1.8rem;
+}
+#Resources h3{
+	font-size: 1.8rem;
+}
+#About h3{
+	font-size: 1.8rem;
 }
 
-.vidIt ul{
-  padding-left: none !important;
+
+#Financing{
+	margin-top: 1rem;
+	background-color: #eee;
 }
 
-img.previewPic {
-  min-width: 200px !important;
+
+#othersitesHead{
+	text-align:center;
+	padding-bottom: 1rem;
+	font-size: 1.8rem;
+	font-weight: 400;
 }
-.media-heading {
-  font-size: 12px !important;
+#othersites, a.othersites{
+	margin: 1.5rem;
+	padding-bottom: 0rem;
+	text-align: center;
+	width: 100%;
 }
 
-.fauxHeader{
-  text-align: center;
-  min-width: 1460px;
-  max-width: 100%;
-  min-height: 130px;
-  max-height: 200px; 
+#legal{
+	font-size: 1.1rem;
+	position: absolute
+	bottom: 3rem;
+	text-align: center;
+	padding-top: 1rem;
 }
-
-.active{
-  font-weight: bold;
-  text-decoration: underline;
-  color: #666666;
-  padding-bottom: 10px;
-  margin-bottom: .1rem;
-  border-left: solid 3px #999999;
-  border-bottom: solid 3px #999999;
+#legal p, #legal ul{
+	text-align: center;
+	margin:0;
 }
-
-ul.vidCategory:hover{
-  font-weight: bold;
-  text-decoration: underline;
-  color: #666666;
-  padding-bottom: 10px;
-  margin-bottom: .1rem;
-  border-left: solid 3px #999999;
-  border-bottom: solid 3px #999999;
+#LegalLinks {
+	padding-top: 1rem;
 }
-
-.socialIcon{
-  margin-right: 10px;
-}
-
-#goToStore, #vidCat {
-text-transform: uppercase;
-}
-
-#goToStore{
-padding-top: 1rem;
-color: #666666;
-padding-bottom: 1rem;
-}
-
-#detailCategory{
-color: #999999;
-font-family: "Noto Sans", Helvetica, Arial, sans-serif
-font-size: 14px;
-font-weight: 400;
-line-height: 1;
-}
-
-.details{
-  font-size: 13px;
-  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
-  background: #e3e3e3;
-  position: relative;
-  min-height: 370px;
-}
-
-#videoTitle{
-  color: #666666;
-}
-
-#vidSocial{
-  position: absolute;
-  bottom: 10px;
-}
-
-#vidList{
-  max-height: 700px;
-}
+#LegalLinks a{
+	padding-right: 1rem;
+	margin-top: 1rem;
+} 

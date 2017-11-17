@@ -7,35 +7,35 @@ import ReactDOM from "react-dom";
 // Including the Link component from React Router to navigate within our application without full page reloads
 // https://github.com/ReactTraining/react-router/blob/master/docs/API.md#link
 var Link = require("react-router").Link;
-import Header from "header";
-import Footer from "footer";
-import Section from "section";
+// import Header from "header";
+// import Footer from "footer";
+// import Section from "section";
 
 
 // Create the Main component
-var Main = React.createClass({
+class Main extends Component{
   render() {
     return (
       // We can only render a single div. So we need to group everything inside of this main-container one
       <div className="main-container">
         <div className="container">
-          <Header/>
-          <Section/>
-          {/* Here we will deploy the sub components Search, Results, or Video */}
-          {/* These sub-components are getting passed as this.props.children */}
-          {this.props.children}
-
-          <Footer/>     
+            I love home depot
         </div>
       </div>
     );
   }
-});
+};
 
 // Export the module back to the route
 module.exports = Main;
 
+//<Header/>
+//          <Section/>
+//          {/* Here we will deploy the sub components Search, Results, or Video */}
+//          {/* These sub-components are getting passed as this.props.children */}
+//          {this.props.children}
 
+//          <Footer/>   
 
 
 // //

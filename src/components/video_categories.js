@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 //import VideoCategoryItem from "./video_category_item";
-const selectableCategory = document.getElementById('VideoCategories');
+//const selectableCategory = document.getElementById('VideoCategories');
 
 const VideoCategories = ({ category, onCategorySelect}) =>{
 	
