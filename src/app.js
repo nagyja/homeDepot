@@ -25,10 +25,11 @@ class App extends Component {
   //  const Content
   //<Content/>
   //<Footer/>
-    
+  
 
   render() {
-
+  
+  
     return (
       <div>
       	<Heading

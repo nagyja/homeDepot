@@ -11,7 +11,7 @@ const serves = [
 const resources=[
 	{resourceLinks:"www.homedepot.com/c/Savings_Center", text:"Specials & Offers"},
 	{resourceLinks:"www.homedepot.com/c/diy_projects_and_ideas", text:"DIY Projects & Ideas"},
-	{resourceLinks:"www.homedepot.com/c/tool_and_truck_rental", text:"Truck &amp; Tool Rental"},
+	{resourceLinks:"www.homedepot.com/c/tool_and_truck_rental", text:"Truck & Tool Rental"},
 	{resourceLinks:"www.homedepot.com/services/", text:"Home Services"},
 	{resourceLinks:"www.homedepot.com/c/Moving_Guide", text:"Moving Services"},
 	{resourceLinks:"http://www.homedepotmeasures.com", text:"Real Estate Floor Plan Services"},
@@ -46,10 +46,10 @@ const legals = [
 	{legalLinks:"www.homedepot.com", text:"Mobile Site"}];
 const Financing = ({action, onActionSelect}) =>{
 	return(
-		<div id="Financing">
+		<div id="Financing" className="col-md-12">
 			<div>
-				<img src="../public/assets/financing.png" width="40"/>
-				<p>Special Financing Available everyday*</p>
+				<img className="col-md-2" src="../public/assets/financing.png" width="50" height="50"/>
+				<p className="col-md-10">Special Financing Available everyday*</p>
 			</div>
 			<a href="www.homedepot.com/c/Credit_Center" title="Pay & Manage Your Card">Pay & Manage Your Card</a><br/>
 			<a href="www.homedepot.com/c/Consumer_Credit_Card" title="Credit Offers">Credit Offers</a>
@@ -58,11 +58,10 @@ const Financing = ({action, onActionSelect}) =>{
 }
 const Signup = ({action, onActionSelect}) =>{
 	return(
-		<div>
-			<p>Get $5 off when you sign up for<br/>
-			emails with savings and tips.</p>
+		<div id="Signup" className="col-md-12">
+			<p>Get $5 off when you sign up for emails with savings and tips.</p>
 			<form>
-				<input type="email" placeholder="Enter Email Address" size="20"/>
+				<input type="email" placeholder=" Enter Email Address"/>
 				<button type="submit"><span>GO</span></button>
 			</form>
 		</div>
@@ -70,7 +69,7 @@ const Signup = ({action, onActionSelect}) =>{
 }
 const Social = ({action, onActionSelect}) =>{
 	const SocialLinks = socials.map((social) =>
-		<a key={social.text}href={social.socialLinks} title={social.title}>
+		<a className="col-md-2" key={social.text}href={social.socialLinks} title={social.title}>
 			<img border="0" src={social.source} width="30" height="30"/>
 		</a>
 	);
@@ -101,7 +100,7 @@ const Legal = ({action, onActionSelect}) =>{
 }
 const Other = ({action, onActionSelect}) =>{
 	return(
-		<div id="misc" className="ServiceFooterElements col-md-3">
+		<div id="Other" className="col-md-3">
 			<Financing/>
 			<Signup/>
 			<Social/>
@@ -114,7 +113,7 @@ const CustomerService = ({action, onActionSelect}) =>{
 	);
 
 	return(
-		<div id="CustomerService" className="ServiceFooterElements col-md-2">
+		<div id="CustomerService" className="serv-footer-sub col-md-3">
 	   		<h3>Customer Service</h3>
 	   		<ul>
     			{customerServ}				
@@ -128,7 +127,7 @@ const Resources = ({ action, onActionSelect}) =>{
    	);
 	
 	return(
-		<div id="Resources" className="ServiceFooterElements col-md-2">
+		<div id="Resources" className="serv-footer-sub col-md-3">
 			<h3>Resources</h3>
 			<ul>
    				{Resourcelinks}			
@@ -142,7 +141,7 @@ const About = ({ action, onActionSelect}) =>{
    	);
    				
 	return(
-		<div id="About" className="ServiceFooterElements col-md-2">
+		<div id="About" className="serv-footer-sub col-md-3">
 			<h3>About Us</h3>
 			<ul>
    				{AboutLinks}
@@ -152,8 +151,7 @@ const About = ({ action, onActionSelect}) =>{
 }
 const ServiceFooter = ({ action, onActionSelect}) =>{
 	return(
-		<div id="ServiceFooter" className="col-md-12">
-			<div className="col-md-1"/>
+		<div id="ServiceFooter" className="row col-md-12">
 			<CustomerService/>
 			<Resources/>
 			<About/>
@@ -162,22 +160,29 @@ const ServiceFooter = ({ action, onActionSelect}) =>{
 	);
 }
 const Footing = ({ action, onActionSelect}) =>{
+	function dropUp(){
+
+	}
+
    	return (
-	    <div>
-	    	<row >
-	    		<div id="tagline" className="row col-md-12">
-	         		<p id="tagMotto"><strong>More saving. More doing.<span>®</span></strong></p>			
-	          		<p id="tagHelp">Need Help? Please call us at:
+	    <div id="showMeTheFooter">
+	    	<div>
+	    		<div id="tagline" className="col-md-12">
+	    			<div id="tag-content">
+	         		<p id="tagMotto"  className="col-md-5"><strong>More saving. More doing.<span>®</span></strong></p>
+	         		<p className="col-md-2"><i id="arrowUp" className="glyphicon glyphicon-triangle-top"/></p> 			
+	          		<p id="tagHelp"  className="col-md-5">Need Help? Please call us at:
 	    				<a href="tel:+1-800-466-3337" title="Call The Home Depot">
 	            			<strong> 1-800-HOME-DEPOT</strong> (1-800-466-3337)
 	    				</a>
 	    			</p>
+	    			</div>
 	    		</div>  		
-	    	</row>
-	    	<row>
+	    	</div>
+	    	<div>
 	    		<ServiceFooter/>
-	    	</row>
-	    	<row className="col-md-12">
+	    	</div>
+	    	<div id="fineprint" className="col-md-12">
 	    		<h3 id="othersitesHead">Our Other Sites</h3>
 	    		<div id="othersites">
 	    			<a className="othersites" href="http://www.homedepot.ca/" title="The Home Depot Canada">The Home Depot Canada</a>
@@ -185,10 +190,8 @@ const Footing = ({ action, onActionSelect}) =>{
 	    			<a className="othersites" href="https://www.blinds.com/" title="Blinds.com">Blinds.com</a>
 	    			<a className="othersites" href="https://www.proreferral.com/" title="Pro Referral">Pro Referral</a>
 	    		</div>
-	    	</row>
-	    	<row>
 	    		<Legal/>
-			</row>
+			</div>
 		</div>
     )
 };

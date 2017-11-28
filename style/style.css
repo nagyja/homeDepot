@@ -186,106 +186,118 @@ text-decoration: none;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*FOOTER*/
 #footing{
+	z-index: 100;
 	min-width: 100%;
 	position: absolute;
 	left: 0;
 	bottom: 1rem;
 }
-#tagline {
-	display: inline-block;
-	width: 100%;
+
+#tagline{
+	min-width: 100%;
 	padding-top: 1rem;
-	top: 0;
 	color:black;
 	background-color: #eeeeee; 
 	font-size: 1.8rem;
 	max-height: 10rem;
+	position: relative;
+}
+
+#tag-content, #ServiceFooter{
+	position: relative;
+	max-width: 75%;
+	left:12%;
 }
 #tagMotto{
-	position: absolute;
-	left:24rem;
-	padding-left: 1rem;
 	text-align: left;
-	max-width: 100%;
-	padding-right: 0;
+	margin-left:0;
+	padding-left: 0;
 }
-
 #tagHelp{
-	right:24rem;
-	position: relative;
+	padding-top: 1px;
 	text-align: right;
-	padding-right: 1rem;
-	width: 100%;
+	font-size: 1.4rem;
+	padding-right:0;
 }
-
 #ServiceFooter{
-	position: relative;
-	
-	display:inline-block;
-	max-width: 100%;
-	margin-bottom: 1rem;
-}
-#CustomerService{
-	
-}
-#Resources, #About, #misc{
-	
-}
-#misc ul{
-	font-size: 1.4rem;
-	padding: 0;
-	margin: 0 0 1rem 0;
-}
-#CustomerService ul{
-	font-size: 1.4rem;
-	padding: 0;
-	margin: 0 0 1rem 0;
-}
-#Resources ul{
-	font-size: 1.4rem;
-	padding: 0;
-	margin: 0 0 1rem 0;
-}
-#About ul{
-	font-size: 1.4rem;
-	padding: 0;
-	margin: 0 0 1rem 0;
-}
-#CustomerService h3{
-	font-size: 1.8rem;
-}
-#Resources h3{
-	font-size: 1.8rem;
-}
-#About h3{
-	font-size: 1.8rem;
+	margin-top: 1rem;
+	margin-right:0;
+	padding-right: 0;
+	display:none;
 }
 
+#ServiceFooter h3{
+	font-size: 1.8rem !important;
+	padding-bottom: 1rem;
+}
+
+.serv-footer-sub ul{
+	padding: 0 0 1rem 0;
+	padding-left: 0;
+}
+
+#Other{
+margin-top:1rem;
+margin-left: 0;
+margin-right: 0;
+padding-right: 0;
+
+}
+#fineprint{
+	display:none;
+}
 
 #Financing{
-	margin-top: 1rem;
+	
 	background-color: #eee;
+	display: inline-block;
+	padding: 2rem 2rem 2rem 2rem;
 }
+#Financing p{
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+}
+#Financing div{
+	margin-right: 0;
+	padding-right:0;
+}
+#Financing div img{
+	padding-right: 0;
+	padding-left: 0;
+}
+#Financing a{
+	background-color: #eee;
+	display: inline-block;
+	padding: 1rem 0 0 0;
+}
+#Signup{
+	padding: 2rem 0 0 0;
+	line-height: 1.5;
+	font-weight: 400;
+}
+#Signup input{
+	width: 80%
 
+}
+#Signup button{
+	height:37px;
+	padding: 0 18px 0 18px;
+	background-color: #f96302;
+	font-size: 1.8rem;
+	line-height: 1em;
+	cursor: pointer;
+	text-align: center;
+	border-width: 0;
+	color: #fff;
+	font-weight: 400;
+}
+#Social a{
+	padding-top: 2rem;
+	padding-left: 0;
+	margin-left: 0;
+}
 
 #othersitesHead{
 	text-align:center;
@@ -305,7 +317,6 @@ text-decoration: none;
 	position: absolute
 	bottom: 3rem;
 	text-align: center;
-	padding-top: 1rem;
 }
 #legal p, #legal ul{
 	text-align: center;
@@ -318,3 +329,30 @@ text-decoration: none;
 	padding-right: 1rem;
 	margin-top: 1rem;
 } 
+#moreHelping{
+	font-size: 1.4rem;
+	background-color: #f96302;
+	color: #fff; 
+	text-align: center;
+	font-weight: 400;
+	min-height: 10rem;
+	max-width: 15rem;
+}
+#arrowUp{
+	color: #337ab7;
+	-webkit-transition: 0.6s ease-out;
+    -moz-transition:  0.6s ease-out;
+    transition:  0.6s ease-out;
+}
+#showMeTheFooter:hover #ServiceFooter{
+	display: block;
+}
+#showMeTheFooter:hover #fineprint{
+	display: block;
+}
+#showMeTheFooter:hover #arrowUp{
+	-webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+
+}
