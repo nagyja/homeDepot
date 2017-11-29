@@ -293,8 +293,24 @@ const Departments = ({ action, onActionSelect}) =>{
 }];
   //assign id to mapped elements    
   const mappedDept = deptLinks.map((dept)=>
-      <a href={dept.deptLink} key={dept.key} title={dept.text} onClick={()=>onActionSelect(action)}>{dept.text}</a>
+        <a href={dept.deptLink} key={dept.key} title={dept.text} onHover={()=>onMappedDeptHover()} onClick={()=>onActionSelect(action)}>{dept.text}</a>
   );
+
+let subMenu();
+let subSubMenu();
+
+onMappedDeptHover ()={
+  subMenu = this.subMenu.map((subDept)=>
+        <a href={dept.deptLink} key={dept.key} title={dept.text} onHover={()=>onMappedSubDeptHover()} onClick={()=>onActionSelect(action)}>{dept.text}</a>
+    );
+}
+
+onMappedSubDeptHover ()={
+  subSubMenu = this.subMenu.map((subDept)=>
+        <a href={dept.deptLink} key={dept.key} title={dept.text} onHover={()=>onMappedSubDeptHover()} onClick={()=>onActionSelect(action)}>{dept.text}</a>
+    );
+}
+
 
   return(
     <div id="Departments" className="dropdown">
