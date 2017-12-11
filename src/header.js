@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Directory from "./components/directory";
+import Directory from "./components/directoryV2";
 import Logo from "./components/logo";
 import Account from "./components/myAccount"
 import Cart from "./components/shoppingCart";
@@ -41,39 +41,7 @@ const StoreLocation = ({setStoreLocation, onStoreSelect})=>{
 }
 
 const Heading = ({ action, onActionSelect}) =>{
-        
-    // const Logo = React.createClass({})
-    // const Store = React.createClass({})
-    // const SearchBar = React.createClass({})
-    // const Account = React.createClass({
-    //   return(
-    //     <div><strong>My Account</strong></div>
-    //   );
-    // const Cart = React.createClass({
-    //   return(
-    //     <div>
-    //       <a href = "https://www.homedepot.com/mycart/home">Cart | {cartCount} 
-    //         <img src="../public/assets/cart.png"/>
-    //       </a>
-    //     </div>
-    //   );
-    // const DropDowns = React.createClass({})
-    // const MessageBand = React.createClass({
-    //   return(
-    //     <div className="col-lg-12" style=padding:10px;padding-right:200px;padding-left:200px;background-color:#f96302;>
-    //       <a  href="http://www.homedepot.com/c/About_Your_Online_Order" style="text-align:center;">
-    //         <strong>Free Shipping On Most Orders of $45 or More ></strong>
-    //       </a>  
-    //     </div>
-    //   );
-    //<Logo/>
-    //        <Store/>
-    //        <SearchBar/>
-    //        <Account/>
-    //        <Cart/>
-    //      <DropDowns/>
-    //      <MessageBand/>
-
+   
   return (
     <div id="Heading">
       <div >
@@ -91,7 +59,6 @@ const Heading = ({ action, onActionSelect}) =>{
     </div>
   );
 }
-
 
 export default Heading;
 

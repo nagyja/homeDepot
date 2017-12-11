@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 
+// //function constructor map
+// var menuList = new function (listOfDept){
+//     listOfDept.map((dept)=>
+//     <a href={dept.deptLink} key={index} title={dept.text} onMouseOver={()=>this.onMappedDeptHover(index)} onClick={()=>onActionSelect(action)}>{dept.text}</a>
+//   );
+// }
+
 const Departments = ({ action, onActionSelect}) =>{
   const deptLinks = [
-    {deptLink: "" , key: "D1", text: "Christmas Decorations", subMenu:[
+    {deptLink: "" , key: "D01", text: "Christmas Decorations", subMenu:[
         {subLink:"", text:"Christmas Trees"},
         {subLink:"", text:"Christmas Lights"},
         {subLink:"", text:"Outdoor Christmas Decorations"},
@@ -16,7 +23,7 @@ const Departments = ({ action, onActionSelect}) =>{
         {subLink:"", text:"View All Holiday Decorations"},
         {subLink:"", text:"View All Christmas Decorations"}]
 },
-    {deptLink: "" , key: "D2", text: "Appliances", subMenu:[
+    {deptLink: "" , key: "D02", text: "Appliances", subMenu:[
         {subLink:"", text:"Appliance Special Buys"},
         {subLink:"", text:"Refrigerators"},
         {subLink:"", text:"Washers & Dryers"},
@@ -34,7 +41,7 @@ const Departments = ({ action, onActionSelect}) =>{
         {subLink:"", text:"Garbage Disposals"},
         {subLink:"", text:"View All Appliances"}]    
 },
-    {deptLink: "" , key: "D3", text: "Bath & Faucets", subMenu:[
+    {deptLink: "" , key: "D03", text: "Bath & Faucets", subMenu:[
         {subLink:"", text:"Bath Faucet & Hardware Collections"},
         {subLink:"", text:"Bathroom Faucets"},
         {subLink:"", text:"Batroom Vanities"},
@@ -51,7 +58,7 @@ const Departments = ({ action, onActionSelect}) =>{
         {subLink:"", text:"Bath Towels & Decor"},
         {subLink:"", text:"View All Bath & Faucets"}]
 },
-    {deptLink: "" , key: "D4", text: "Blinds & Window Treatments", subMenu:[
+    {deptLink: "" , key: "D04", text: "Blinds & Window Treatments", subMenu:[
         {subLink:"", text:"Blinds"},
         {subLink:"", text:"Shades"},
         {subLink:"", text:"Plantation Shutters"},
@@ -61,7 +68,7 @@ const Departments = ({ action, onActionSelect}) =>{
         {subLink:"", text:"Window Film"},
         {subLink:"", text:"view All Blinds & Window Treatments"}]
 },
-    {deptLink: "" , key: "D5", text: "Builders Materials", subMenu:[
+    {deptLink: "" , key: "D05", text: "Builders Materials", subMenu:[
         {subLink:"", text:"Lumber & Composites"},
         {subLink:"", text:"Fencing"},
         {subLink:"", text:"Decking"},
@@ -76,7 +83,7 @@ const Departments = ({ action, onActionSelect}) =>{
         {subLink:"", text:"Fasteners"},
         {subLink:"", text:"Moulding & Millwork"}]
 },
-    {deptLink: "" , key: "D6", text: "Decor & Furniture", subMenu:[
+    {deptLink: "" , key: "D06", text: "Decor & Furniture", subMenu:[
         {subLink:"", text:"Rooms We Love"},
         {subLink:"", text:"Furniture"},
         {subLink:"", text:"Matresses"},
@@ -90,7 +97,7 @@ const Departments = ({ action, onActionSelect}) =>{
         {subLink:"", text:"Holiday Decorations"},
         {subLink:"", text:"View All Decor & Furniture"}]
 },
-    {deptLink: "" , key: "D7", text: "Doors & Windows", subMenu:[
+    {deptLink: "" , key: "D07", text: "Doors & Windows", subMenu:[
         {subLink:"", text:"Exterior Doors"},
         {subLink:"", text:"Front Doors"},
         {subLink:"", text:"Interior & Closet Doors"},
@@ -103,7 +110,7 @@ const Departments = ({ action, onActionSelect}) =>{
         {subLink:"", text:"Related Categories"},
         {subLink:"", text:"View All Doors & Windows"}]
 },
-    {deptLink: "" , key: "D8", text: "Electrical", subMenu:[
+    {deptLink: "" , key: "D08", text: "Electrical", subMenu:[
         {subLink:"", text:"Wire"},
         {subLink:"", text:"Light Bulbs"},
         {subLink:"", text:"Home Security & Surveillance"},
@@ -121,7 +128,7 @@ const Departments = ({ action, onActionSelect}) =>{
         {subLink:"", text:"Related Categories"},
         {subLink:"", text:"View All Electrical"}]
 },
-    {deptLink: "" , key: "D9", text: "Flooring & Area Rugs", subMenu:[
+    {deptLink: "" , key: "D09", text: "Flooring & Area Rugs", subMenu:[
         {subLink:"", text:"Area Rugs & Mats"},
         {subLink:"", text:"Carpet & Carpet Tile"},
         {subLink:"", text:"Tile"},
@@ -229,7 +236,7 @@ const Departments = ({ action, onActionSelect}) =>{
         {subLink:"", text:"Hot Tubs & Saunas"},
         {subLink:"", text:"View All Outdoor Living"}]
 },
-    {deptLink: "" , key: "D16", text: "Paint", subMenu:
+    {deptLink: "" , key: "D16", text: "Paint", subMenu:[
         {subLink:"", text:"Interior Paint"},
         {subLink:"", text:"Exterior Paint"},
         {subLink:"", text:"Primers"},
@@ -291,33 +298,45 @@ const Departments = ({ action, onActionSelect}) =>{
         {subLink:"", text:"Wet/Dry Vacuums"},
         {subLink:"", text:"View All Tools"}]
 }];
-  //assign id to mapped elements    
-  const mappedDept = deptLinks.map((dept)=>
-        <a href={dept.deptLink} key={dept.key} title={dept.text} onHover={()=>onMappedDeptHover()} onClick={()=>onActionSelect(action)}>{dept.text}</a>
+
+//assign id to mapped elements    
+  const mappedDept = deptLinks.map((dept, index)=>
+        <a href={dept.deptLink} key={dept.key} title={dept.text} onMouseOver={()=>onMappedDeptHover()} onClick={()=>onActionSelect(action)}>{dept.text}</a>
   );
 
-let subMenu();
-let subSubMenu();
+let subMenus;
+let subSubMenus;
 
-onMappedDeptHover ()={
-  subMenu = this.subMenu.map((subDept)=>
-        <a href={dept.deptLink} key={dept.key} title={dept.text} onHover={()=>onMappedSubDeptHover()} onClick={()=>onActionSelect(action)}>{dept.text}</a>
-    );
-}
 
-onMappedSubDeptHover ()={
-  subSubMenu = this.subMenu.map((subDept)=>
-        <a href={dept.deptLink} key={dept.key} title={dept.text} onHover={()=>onMappedSubDeptHover()} onClick={()=>onActionSelect(action)}>{dept.text}</a>
-    );
-}
+function onMappedDeptHover(e){
+    let hID = this.key;
+    console.log(hID);
+    // let mLocation = deptLinks.hID.submenu;
+    // subMenus =  mLocation.map ((subDept)=>
+    //     <a href={subDept.subLink} key={subDept.key} title={subDept.text} onMouseOver={()=>onMappedSubDeptHover()} onClick={()=>onActionSelect(action)}>{subDept.text}</a>
+    // );
+};
+
+// function onMappedDeptHover (e){
+//     let deptIndex = get
+//    subMenu = deptLinks.e.subMenu.map((subDept)=>
+//         <a href={subDept.subLink} key={subDept.key} title={subDept.text} onMouseOver={()=>onMappedSubDeptHover()} onClick={()=>onActionSelect(action)}>{subDept.text}</a>
+//     );
+// }
+
+// function onMappedSubDeptHover (){
+//   subSubMenu = this.subSection.map((subPanel)=>
+//         <a href={subPanel.deptLink} key={subPanel.key} title={subPanel.text} onMouseOver={()=>onMappedSubDeptHover()} onClick={()=>onActionSelect(action)}>{subPanel.text}</a>
+//     );
+// }
 
 
   return(
     <div id="Departments" className="dropdown">
       <div className="dropbtn">All Departments</div>
       <div className="dropdown-content">{mappedDept}</div>
-      <div className="drop-right1-content">{subMenu}</div>
-      <div className="drop-right2-content">{subSubMenu}</div>
+      <div className="drop-right1-content">{subMenus}</div>
+      <div className="drop-right2-content">{subSubMenus}</div>
     </div>
   );
 }
